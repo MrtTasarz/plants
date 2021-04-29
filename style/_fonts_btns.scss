@@ -1,0 +1,86 @@
+@mixin trans {
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+  font-weight: 400;
+  color: $darker;
+  @content;
+}
+
+h1,
+h2 {
+  @include trans;
+  font-size: 2.2em;
+}
+@media only screen and (min-width: 1024px) {
+  h1,
+  h2 {
+    font-size: 3em;
+    font-weight: 600;
+  }
+}
+
+h3 {
+  @include trans;
+  font-size: 1.8em;
+}
+
+h5 {
+  @include trans;
+  font-size: 1.1em;
+}
+
+span {
+  color: $secondary-green;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.1em;
+  color: $darker;
+}
+
+a {
+  text-decoration: none;
+  color: $darker;
+  cursor: pointer;
+
+  &:visited {
+    color: $darker;
+  }
+}
+
+.light {
+  color: $lighter;
+}
+
+//buttons
+.btn {
+  margin: 1em 0;
+  padding: 0.5em 2em;
+  border: 2px solid $darker;
+  border-radius: 25px;
+  background: transparent;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  transition: all 1s ease-in-out;
+
+  &:hover {
+    background: $darker;
+    color: $lighter;
+  }
+
+  &--sub {
+    padding: 15px 0.7em;
+    background: $secondary-orange;
+    text-transform: uppercase;
+    font-weight: 300;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    width: 50%;
+
+    &:hover {
+      background: $primary-orange;
+      color: $lighter;
+    }
+  }
+}
