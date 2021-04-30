@@ -29,6 +29,47 @@
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .question-text {
+    justify-content: space-between;
+  }
+
+  .faq-container {
+    display: flex;
+
+    .container {
+      position: sticky;
+      top: 0;
+    }
+    .answers {
+      width: 80%;
+    }
+  }
+
+  //about
+  .block {
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    padding: 2em 1em;
+    .text {
+      margin-right: 2em;
+      h2 {
+        font-size: 2em;
+      }
+    }
+    .img {
+      height: 100%;
+    }
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+    .text {
+      margin-right: 0;
+      margin-left: 2em;
+    }
+  }
 }
 
 @media only screen and (min-width: 1024px) {

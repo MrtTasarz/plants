@@ -8,6 +8,7 @@
 }
 
 //general
+
 .container {
   padding: 2em 1em;
 }
@@ -23,6 +24,11 @@
   object-fit: cover;
   border-radius: 25px;
   margin-bottom: 1.5em;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  line-height: 2em;
 }
 
 //navigation
@@ -240,12 +246,46 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
     margin: 1em 0 3em;
-    ul {
-      list-style: none;
-      padding: 0;
-      line-height: 2em;
+  }
+}
+
+// faq page
+.closeB {
+  display: none;
+}
+.question-answer {
+  display: none;
+}
+
+.faq-section {
+  h2 {
+    border-bottom: 1px solid $darker;
+  }
+  a {
+    font-size: 1.7em;
+    text-transform: uppercase;
+    margin: 1em 0;
+    &:hover {
+      color: $secondary-green;
     }
   }
 }
+
+.question {
+  margin: 1em 0;
+}
+.question-text {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  h5 {
+    margin-right: 1em;
+  }
+  .icon {
+    font-size: 1.3em;
+  }
+}
+//about
 
 @import "_media";
