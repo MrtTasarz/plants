@@ -130,7 +130,7 @@ a:visited {
   overflow-y: hidden;
 }
 
-.menu {
+.menu, .basket {
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -162,11 +162,12 @@ a:visited {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 }
 .close-btn,
-.menu {
+.menu,
+.basket {
   display: none;
   padding: 0.5em;
 }
@@ -266,7 +267,7 @@ a:visited {
 
 .opinions-section {
   height: 80vh;
-  background: #606c38;
+  background: #dda15e;
 }
 .opinions-section .container {
   text-align: center;
@@ -351,6 +352,32 @@ footer .container {
   font-size: 1.3em;
 }
 
+.about {
+  background-color: #606c38;
+}
+.about .container {
+  background-color: #606c38;
+}
+
+.block {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.block--column {
+  flex-direction: column;
+}
+
+.orange {
+  background-color: #dda15e;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5em;
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     padding: 2em;
@@ -396,6 +423,7 @@ footer .container {
 
   .block {
     display: flex;
+    flex-direction: row;
     align-items: center;
     height: 50vh;
     padding: 2em 1em;
@@ -408,14 +436,21 @@ footer .container {
   }
   .block .img {
     height: 100%;
+    width: 50%;
+    margin-left: 2em;
   }
-
-  .reverse {
+  .block div {
+    width: 50%;
+  }
+  .block--reverse {
     flex-direction: row-reverse;
   }
-  .reverse .text {
-    margin-right: 0;
-    margin-left: 2em;
+  .block--reverse .img {
+    margin-left: 0em;
+    margin-right: 2em;
+  }
+  .block--column {
+    flex-direction: column;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -423,7 +458,7 @@ footer .container {
     display: none;
   }
 
-  .menu {
+  .menu, .basket {
     position: unset;
     display: flex;
     background: transparent;
@@ -431,10 +466,10 @@ footer .container {
     border-bottom: 1px solid #000000;
     transform: translateX(0%);
   }
-  .menu .menu-list {
+  .menu .menu-list, .basket .menu-list {
     display: flex;
   }
-  .menu .menu-list a {
+  .menu .menu-list a, .basket .menu-list a {
     font-size: 1.5em;
     margin: 0 0.5em;
   }
@@ -442,6 +477,14 @@ footer .container {
   @keyframes openUp {
     0% {
       transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes openU {
+    0% {
+      transform: translateX(100%);
     }
     100% {
       transform: translateX(0%);
@@ -479,5 +522,23 @@ footer .container {
   .faq .links {
     width: 80%;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .basket {
+    position: absolute;
+    height: 100vh;
+    width: 80vw;
+    top: 0;
+    right: 0;
+    display: none;
+    z-index: 20;
+    transform: translateX(-100%);
+    transform-origin: right;
+    animation: openU 1s ease-in-out both;
+    background-color: #606c38;
+  }
+
+  .close {
+    animation: close 1s ease-in-out both;
   }
 }/*# sourceMappingURL=style.css.map */

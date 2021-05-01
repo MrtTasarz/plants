@@ -6,19 +6,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/0a74417982.js" crossorigin="anonymous"></script>
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="css/glide.core.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Page One</title>
 </head>
 
 <body>
-  <header class="navigation about">
+  <header class="navigation">
     <div class="wrapper">
+      <div class="basket">
+        <div class="row">
+          <i class="fas fa-times fa-2x icon close-btn" id="basket-close"></i>
+          <h3>basket</h3>
+        </div>
+        <div class="plants">
+          <ul class="added list"></ul>
+        </div>
+      </div>
       <div class="nav-bar">
         <!-- logo -->
         <a href="index.html" class="logo"><i class="far fa-eye fa-2x icon"></i></a>
-        <!-- menu btn -->
-        <i class="fas fa-grip-lines fa-2x icon open-btn"></i>
-
+        <div class="left">
+          <!-- basket -->
+          <i class="fas fa-shopping-cart fa-2x icon basket-btn"></i>
+          <!-- menu btn -->
+          <i class="fas fa-grip-lines fa-2x icon open-btn"></i>
+        </div>
       </div>
       <!-- navigation -->
       <nav class="menu">
@@ -28,7 +42,7 @@
         <ul class="menu-list">
           <li><a href="about.html">About</a></li>
           <li><a href="shop.html">Shop</a></li>
-          <li><a href="faq.html">faq</a></li>
+          <li><a href="faq.html">FAQ</a></li>
           <!-- social media -->
           <li><a href="instagram.com">Instagram</a></li>
           <li><a href="twitter.com">Twitter</a></li>
@@ -36,52 +50,29 @@
       </nav>
     </div>
   </header>
-  <!-- section hero -->
-  <section class="hero about">
-    <div class="container">
-      <img class="img" src="/img/img_1.jpg" alt="">
-      <div class="h-text">
-        <h2>Lorem ipsum dolor sit.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti dolor praesentium esse fugit
-          autem vitae.
-        </p>
-        <button class="btn">About Us</button>
+
+  <div>
+    <!-- section hero -->
+    <section class="product">
+      <div class="container">
+        <div class="row">
+          <a href="shop.html"><i class="fas fa-arrow-left icon"></i></a>
+          <h3>Product no.1</h3>
+        </div>
+        <div class="block">
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe omnis corrupti, explicabo consectetur modi
+              iste voluptates tempore qui optio, ut minima asperiores. Nobis repellat excepturi quo consectetur itaque.
+              Voluptatum tempore fuga quia rerum dolorem commodi at saepe illum ipsum numquam.</p>
+            <button class="btn">add to basket</button>
+          </div>
+          <img src="/img/products/product_1.jpg" class="img" alt="Product">
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- section -->
-  <section>
-    <div class="container orange">
-      <div class="text">
-        <h5>OUR MISSION</h5>
-        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-        <button class="btn">Try Us Now</button>
-      </div>
-    </div>
-    <!-- div -->
-    <div class="container block">
-      <div>
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur quas veritatis doloribus porro harum
-          dolores hic a repudiandae, fugiat ex maxime eligendi beatae, ipsum nisi nemo. Dolorum ipsa illo aliquid!</p>
-      </div>
-      <img class="img" src="/img/products/product_3.jpg" alt="">
-    </div>
-    <!-- div -->
-    <div class="container block block--reverse">
-      <div>
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur quas veritatis doloribus porro harum
-          dolores hic a repudiandae, fugiat ex maxime eligendi beatae, ipsum nisi nemo. Dolorum ipsa illo aliquid!</p>
-      </div>
-      <img class="img" src="/img/products/product_5.jpg" alt="">
-    </div>
-
-  </section>
+    </section>
 
 
-
+  </div>
   <!-- footer -->
   <footer>
     <div class="container">
@@ -130,6 +121,7 @@
 
     </div>
   </footer>
+
 </body>
 
 </html>

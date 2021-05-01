@@ -49,6 +49,7 @@
   //about
   .block {
     display: flex;
+    flex-direction: row;
     align-items: center;
     height: 50vh;
     padding: 2em 1em;
@@ -60,14 +61,21 @@
     }
     .img {
       height: 100%;
-    }
-  }
-
-  .reverse {
-    flex-direction: row-reverse;
-    .text {
-      margin-right: 0;
+      width: 50%;
       margin-left: 2em;
+    }
+    div {
+      width: 50%;
+    }
+    &--reverse {
+      flex-direction: row-reverse;
+      .img {
+        margin-left: 0em;
+        margin-right: 2em;
+      }
+    }
+    &--column {
+      flex-direction: column;
     }
   }
 }
@@ -96,6 +104,14 @@
   @keyframes openUp {
     0% {
       transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes openU {
+    0% {
+      transform: translateX(100%);
     }
     100% {
       transform: translateX(0%);
@@ -139,5 +155,22 @@
       width: 80%;
       grid-template-columns: repeat(4, 1fr);
     }
+  }
+
+  .basket {
+    position: absolute;
+    height: 100vh;
+    width: 80vw;
+    top: 0;
+    right: 0;
+    display: none;
+    z-index: 20;
+    transform: translateX(-100%);
+    transform-origin: right;
+    animation: openU 1s ease-in-out both;
+    background-color: $primary-green;
+  }
+  .close {
+    animation: close 1s ease-in-out both;
   }
 }

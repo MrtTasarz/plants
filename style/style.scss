@@ -83,7 +83,7 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 }
 
@@ -198,7 +198,7 @@
 //opinions
 .opinions-section {
   height: 80vh;
-  background: $primary-green;
+  background: $secondary-orange;
   .container {
     text-align: center;
     height: 100%;
@@ -288,4 +288,34 @@ footer {
 }
 //about
 
+.about {
+  background-color: $primary-green;
+  .container {
+    background-color: $primary-green;
+  }
+}
+.block {
+  display: flex;
+  flex-direction: column-reverse;
+  &--column {
+    flex-direction: column;
+  }
+}
+.orange {
+  background-color: $secondary-orange;
+}
+
+//shop
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5em;
+}
+
+.basket {
+  @extend .menu;
+}
+
+//
 @import "_media";

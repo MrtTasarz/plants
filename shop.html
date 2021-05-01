@@ -6,132 +6,296 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/0a74417982.js" crossorigin="anonymous"></script>
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="css/glide.core.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Page One</title>
 </head>
 
 <body>
-  <header>
-    <!-- logo -->
-    <i class="far fa-eye"></i>
-    <!-- menu btn -->
-    <i class="fas fa-grip-lines"></i>
-    <!-- navigation -->
-    <nav>
-      <!-- close btn -->
-      <i class="fas fa-times"></i>
-      <!-- menu -->
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Contact</a></li>
-        <!-- social media -->
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Twitter</a></li>
-      </ul>
-    </nav>
+  <header class="navigation">
+    <div class="wrapper">
+      <div class="basket">
+        <div class="row">
+          <i class="fas fa-times fa-2x icon close-btn" id="basket-close"></i>
+          <h3>basket</h3>
+        </div>
+        <div class="plants">
+          <ul class="added list"></ul>
+        </div>
+      </div>
+      <div class="nav-bar">
+        <!-- logo -->
+        <a href="index.html" class="logo"><i class="far fa-eye fa-2x icon"></i></a>
+        <div class="left">
+          <!-- basket -->
+          <i class="fas fa-shopping-cart fa-2x icon basket-btn"></i>
+          <!-- menu btn -->
+          <i class="fas fa-grip-lines fa-2x icon open-btn"></i>
+        </div>
+      </div>
+      <!-- navigation -->
+      <nav class="menu">
+        <!-- close btn -->
+        <i class="fas fa-times fa-2x icon close-btn" id="menu-close"></i>
+        <!-- menu -->
+        <ul class="menu-list">
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <!-- social media -->
+          <li><a href="instagram.com">Instagram</a></li>
+          <li><a href="twitter.com">Twitter</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h3>SHOP NOW</h3>
-    <ul>
-      <li><a href="#">PLANTS 1</a></li>
-      <li><a href="#">PLANTS 2</a></li>
-      <li><a href="#">PLANTS 3</a></li>
-      <li><a href="#">PLANTS 4</a></li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Section name</h3>
-    <!-- container -->
-    <div>
-      <!-- product -->
-      <div>
-        <h5>Product name</h5>
-        <p>price</p>
+  <div>
+    <!-- section hero -->
+    <section class="faq-section main">
+      <div class="container">
+        <h2>PLANTS</h2>
+        <ul class="list">
+          <li><a href="#lil">LIL</a></li>
+          <li><a href="#smol">SMOL</a></li>
+          <li><a href="#pocket">POCKET SIZE</a></li>
+        </ul>
       </div>
+    </section>
 
-      <div>
-        <h5>Product name</h5>
-        <p>price</p>
+    <section id="lil">
+      <div class="row container">
+        <h3>LIL</h3>
+        <a href="#"><i class="fas fa-arrow-right icon"></i></a>
       </div>
+      <div class="container">
+        <!-- slider -->
+        <div class="lil">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_1.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_2.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_3.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_4.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_5.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_6.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
 
-      <div>
-        <h5>Product name</h5>
-        <p>price</p>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <section id="smol">
+      <div class="row container">
+        <h3>smol</h3>
+        <a href="#"><i class="fas fa-arrow-right icon"></i></a>
       </div>
+      <div class="container">
+        <!-- slider -->
+        <div class="smol">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_1.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_2.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_3.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_4.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_5.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_6.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
 
-      <div>
-        <h5>Product name</h5>
-        <p>price</p>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <section id="pocket">
+      <div class="row container">
+        <h3>pocket size</h3>
+        <a href="#"><i class="fas fa-arrow-right icon"></i></a>
       </div>
+      <div class="container">
+        <!-- slider -->
+        <div class="pocket">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_1.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_2.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_3.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_4.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_5.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_6.jpg" alt="">
+                  <button class="btn"><a href="product.html">check me out</a></button>
+                </div>
+              </li>
 
-      <div>
-        <h5>Product name</h5>
-        <p>price</p>
-      </div>
+            </ul>
+          </div>
+        </div>
 
-      <div>
-        <h5>Product name</h5>
-        <p>price</p>
-      </div>
+    </section>
 
-      <div>
-        <h5>Product name</h5>
-        <p>price</p>
-      </div>
-
-      <div>
-        <h5>Product name</h5>
-        <p>price</p>
-      </div>
-
-      <!-- on hover add button -->
-    </div>
-  </section>
-
-
+  </div>
   <!-- footer -->
   <footer>
-    <div>
-      <h4>Join our newsletter</h4>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, cupiditate!</p>
-      <input type="email" name="email" id="email">
-      <button>Sign up</button>
+    <div class="container">
+      <div class="black">
+        <div class="text">
+          <h3 class="light">Join our newsletter</h3>
+          <p class="light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, cupiditate!</p>
+        </div>
+        <div class="sub">
+          <input type="email" name="email" id="email">
+          <button class="btn--sub">Sign up</button>
+        </div>
+      </div>
+      <div class="faq">
+        <!-- logo -->
+        <a href="index.html" class="logo"><i class="far fa-eye fa-2x icon"></i></a>
+        <div class="links">
+          <div>
+            <h5>Need help?</h5>
+            <ul class="list">
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Your Account</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Follow us</h5>
+            <ul class="list">
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Legal Stuff</h5>
+            <ul class="list">
+              <li><a href="#">Privacy & Terms</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Contact</h5>
+            <ul class="list">
+              <li><a href="#">Email Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div>
-      <!-- logo -->
-      <i class="far fa-eye"></i>
-      <div>
-        <h5>Need help?</h5>
-        <ul>
-          <li><a href="#">FAQs</a></li>
-          <li><a href="#">Your Account</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Follow us</h5>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Legal Stuff</h5>
-        <ul>
-          <li><a href="#">Privacy & Terms</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Contact</h5>
-        <ul>
-          <li><a href="#">Email Us</a></li>
-        </ul>
-      </div>
-    </div>
-    <p>&copy; Lorem, ipsum.</p>
   </footer>
+  <script src='https://cdn.jsdelivr.net/npm/@glidejs/glide'></script>
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+  <script>
+    const a = {
+      type: 'carousel',
+      startAt: 0,
+      perView: 1,
+      autoplay: 2000 | true,
+      breakpoints: {
+        320: {
+          perView: 1
+        },
+        768: {
+          perView: 2
+        },
+        1440: {
+          perView: 4
+        }
+      }
+
+    }
+    new Glide('.lil', a).mount();
+    new Glide('.smol', a).mount();
+    new Glide('.pocket', a).mount();
+  </script>
 </body>
 
 </html>
