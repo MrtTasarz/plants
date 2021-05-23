@@ -349,9 +349,12 @@
       const config = {
         type: "carousel",
         startAt: 0,
-        perView: 1,
+        perView: 4,
         autoplay: 3000 | true,
         breakpoints: {
+          300: {
+            perView: 1,
+          },
           425: {
             perView: 1,
           },
