@@ -1,329 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link rel="stylesheet" href="css/glide.core.min.css" />
+    <script
+      src="https://kit.fontawesome.com/0a74417982.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Page One</title>
+  </head>
+  <!-- inspired by https://futurenoodles.com/ -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-  <link rel="stylesheet" href="css/glide.core.min.css">
-  <script src="https://kit.fontawesome.com/0a74417982.js" crossorigin="anonymous"></script>
-  <script src="index.js" defer></script>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Page One</title>
-</head>
-<!-- inspired by https://futurenoodles.com/ -->
-
-<body>
-  <header class="navigation">
-    <div class="wrapper">
-      <div class="nav-bar">
-        <!-- logo -->
-        <a href="index.html" class="logo"><i class="far fa-eye fa-2x icon"></i></a>
-        <!-- menu btn -->
-        <i class="fas fa-grip-lines fa-2x icon open-btn"></i>
-
+  <body>
+    <header class="navigation">
+      <div class="wrapper">
+        <div class="nav-bar">
+          <!-- logo -->
+          <a href="index.html" class="logo"
+            ><i class="far fa-eye fa-2x icon"></i
+          ></a>
+          <!-- menu btn -->
+          <i class="fas fa-grip-lines fa-2x icon open-btn"></i>
+        </div>
+        <!-- navigation -->
+        <nav class="menu">
+          <!-- close btn -->
+          <i class="fas fa-times fa-2x icon close-btn" id="menu-close"></i>
+          <!-- menu -->
+          <ul class="menu-list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="faq.html">faq</a></li>
+            <!-- social media -->
+            <li><a href="instagram.com">Instagram</a></li>
+            <li><a href="twitter.com">Twitter</a></li>
+          </ul>
+        </nav>
       </div>
-      <!-- navigation -->
-      <nav class="menu">
-        <!-- close btn -->
-        <i class="fas fa-times fa-2x icon close-btn" id="menu-close"></i>
-        <!-- menu -->
-        <ul class="menu-list">
-          <li><a href="about.html">About</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="faq.html">faq</a></li>
-          <!-- social media -->
-          <li><a href="instagram.com">Instagram</a></li>
-          <li><a href="twitter.com">Twitter</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- hero -->
-  <section class="hero">
-    <div class="container">
-      <img src="/img/img_0.jpg" class="img " alt="Water plants">
-      <div class="h-text">
-        <h1>Lorem ipsum dolor sit.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti dolor praesentium esse fugit
-          autem vitae.
-        </p>
+    <!-- hero -->
+    <section class="hero">
+      <div class="container">
+        <img src="/img/img_0.jpg" class="img" alt="Water plants" />
+        <div class="h-text">
+          <h1>Lorem ipsum dolor sit.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+            dolor praesentium esse fugit autem vitae.
+          </p>
+          <button class="btn">Try Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section -->
+    <section class="mission">
+      <!-- animation -->
+      <div class="anim-text">
+        <h2 class="anim">
+          <span>PLANTS</span>PLANTS <span>PLANTS</span> PLANTS<span
+            >PLANTS</span
+          >
+          PLANTS<span>PLANTS</span> PLANTS
+        </h2>
+        <h2 class="anim">
+          <span>PLANTS</span> PLANTS<span>PLANTS</span> PLANTS<span
+            >PLANTS</span
+          >
+          PLANTS<span>PLANTS</span> PLANTS
+        </h2>
+      </div>
+      <!-- icons -->
+      <div class="container">
+        <div class="grid">
+          <div class="grid-item">
+            <img
+              src="/img/illustrations/LoveRain.png"
+              class="img"
+              alt="Rain Illustration"
+            />
+            <h5>Lorem, ipsum.</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+          <div class="grid-item">
+            <img
+              src="/img/illustrations/flowercrown.png"
+              class="img"
+              alt="Flowecrown Illustration"
+            />
+            <h5>Lorem, ipsum.</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+          <div class="grid-item">
+            <img
+              src="/img/illustrations/GrowLove.png"
+              class="img"
+              alt="Love Illustration"
+            />
+            <h5>Lorem, ipsum.</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+          <div class="grid-item">
+            <img
+              src="/img/illustrations/CupofClouds.png"
+              class="img"
+              alt="Clouds Illustration"
+            />
+            <h5>Lorem, ipsum.</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+          <div class="grid-item">
+            <img
+              src="/img/illustrations/Meditation.png"
+              class="img"
+              alt="Meditation Illustration"
+            />
+            <h5>Lorem, ipsum.</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+          <div class="grid-item">
+            <img
+              src="/img/illustrations/SunLightening.png"
+              class="img"
+              alt="Sun Illustration"
+            />
+            <h5>Lorem, ipsum.</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section -->
+    <section class="products">
+      <div class="wrapper">
+        <h2>Lorem ipsum dolor sit.</h2>
         <button class="btn">Try Now</button>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- section -->
-  <section class="mission">
-
-
-    <!-- animation -->
-    <div class="anim-text">
-      <h2 class="anim"><span>PLANTS</span>PLANTS <span>PLANTS</span> PLANTS<span>PLANTS</span>
-        PLANTS<span>PLANTS</span> PLANTS </h2>
-      <h2 class="anim"><span>PLANTS</span> PLANTS<span>PLANTS</span> PLANTS<span>PLANTS</span>
-        PLANTS<span>PLANTS</span> PLANTS
-      </h2>
-    </div>
-    <!-- icons -->
-    <div class="container">
-      <div class="grid">
-        <div class="grid-item">
-          <img src="/img/illustrations/LoveRain.png" class="img" alt="Rain Illustration">
-          <h5>Lorem, ipsum.</h5>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <!-- section -->
+    <section class="shop">
+      <div class="container">
+        <!-- slider -->
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_1.jpg" alt="" />
+                  <h5>Lorem, ipsum.</h5>
+                  <h3>Lorem, ipsum.</h3>
+                  <p>Lorem, ipsum dolor.</p>
+                  <button class="btn">View recipe</button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_2.jpg" alt="" />
+                  <h5>Lorem, ipsum.</h5>
+                  <h3>Lorem, ipsum.</h3>
+                  <p>Lorem, ipsum dolor.</p>
+                  <button class="btn">View recipe</button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_3.jpg" alt="" />
+                  <h5>Lorem, ipsum.</h5>
+                  <h3>Lorem, ipsum.</h3>
+                  <p>Lorem, ipsum dolor.</p>
+                  <button class="btn">View recipe</button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_4.jpg" alt="" />
+                  <h5>Lorem, ipsum.</h5>
+                  <h3>Lorem, ipsum.</h3>
+                  <p>Lorem, ipsum dolor.</p>
+                  <button class="btn">View recipe</button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_5.jpg" alt="" />
+                  <h5>Lorem, ipsum.</h5>
+                  <h3>Lorem, ipsum.</h3>
+                  <p>Lorem, ipsum dolor.</p>
+                  <button class="btn">View recipe</button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="item">
+                  <img class="img" src="/img/products/product_6.jpg" alt="" />
+                  <h5>Lorem, ipsum.</h5>
+                  <h3>Lorem, ipsum.</h3>
+                  <p>Lorem, ipsum dolor.</p>
+                  <button class="btn">View recipe</button>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="grid-item">
-          <img src="/img/illustrations/flowercrown.png" class="img" alt="Flowecrown Illustration">
-          <h5>Lorem, ipsum.</h5>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-        </div>
-        <div class="grid-item">
-          <img src="/img/illustrations/GrowLove.png" class="img" alt="Love Illustration">
-          <h5>Lorem, ipsum.</h5>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-        </div>
-        <div class="grid-item">
-          <img src="/img/illustrations/CupofClouds.png" class="img" alt="Clouds Illustration">
-          <h5>Lorem, ipsum.</h5>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-        </div>
-        <div class="grid-item">
-          <img src="/img/illustrations/Meditation.png" class="img" alt="Meditation Illustration">
-          <h5>Lorem, ipsum.</h5>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-        </div>
-        <div class="grid-item">
-          <img src="/img/illustrations/SunLightening.png" class="img" alt="Sun Illustration">
-          <h5>Lorem, ipsum.</h5>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- section -->
-  <section class="products">
-    <div class="wrapper">
-      <h2>Lorem ipsum dolor sit.</h2>
-      <button class="btn">Try Now</button>
-    </div>
-  </section>
-
-  <!-- section -->
-  <section class="shop">
-    <div class="container">
-      <!-- slider -->
-      <div class="glide">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <div class="item">
-                <img class="img" src="/img/products/product_1.jpg" alt="">
-                <h5>Lorem, ipsum.</h5>
-                <h3>Lorem, ipsum.</h3>
-                <p>Lorem, ipsum dolor.</p>
-                <button class="btn">View recipe</button>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="item">
-                <img class="img" src="/img/products/product_2.jpg" alt="">
-                <h5>Lorem, ipsum.</h5>
-                <h3>Lorem, ipsum.</h3>
-                <p>Lorem, ipsum dolor.</p>
-                <button class="btn">View recipe</button>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="item">
-                <img class="img" src="/img/products/product_3.jpg" alt="">
-                <h5>Lorem, ipsum.</h5>
-                <h3>Lorem, ipsum.</h3>
-                <p>Lorem, ipsum dolor.</p>
-                <button class="btn">View recipe</button>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="item">
-                <img class="img" src="/img/products/product_4.jpg" alt="">
-                <h5>Lorem, ipsum.</h5>
-                <h3>Lorem, ipsum.</h3>
-                <p>Lorem, ipsum dolor.</p>
-                <button class="btn">View recipe</button>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="item">
-                <img class="img" src="/img/products/product_5.jpg" alt="">
-                <h5>Lorem, ipsum.</h5>
-                <h3>Lorem, ipsum.</h3>
-                <p>Lorem, ipsum dolor.</p>
-                <button class="btn">View recipe</button>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="item">
-                <img class="img" src="/img/products/product_6.jpg" alt="">
-                <h5>Lorem, ipsum.</h5>
-                <h3>Lorem, ipsum.</h3>
-                <p>Lorem, ipsum dolor.</p>
-                <button class="btn">View recipe</button>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-
-
-      <div class="text">
-        <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
-        <button class="btn">Try Us</button>
-      </div>
-    </div>
-
-
-
-  </section>
-
-  <!-- section -->
-  <section class="hero about">
-    <div class="container">
-      <img class="img" src="/img/img_1.jpg" alt="">
-      <div class="h-text">
-        <h2>Lorem ipsum dolor sit.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti dolor praesentium esse fugit
-          autem vitae.
-        </p>
-        <button class="btn"><a href="about.html">About Us</a></button>
-      </div>
-    </div>
-  </section>
-
-  <!-- section -->
-  <section class="opinions-section">
-    <!-- slider opinions -->
-
-    <div class="container">
-      <div class="opinions">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <div class="opinion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellendus beatae nobis.</p>
-                <small>Lorem, ipsum.</small>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="opinion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellendus beatae nobis.</p>
-                <small>Lorem, ipsum.</small>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="opinion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellendus beatae nobis.</p>
-                <small>Lorem, ipsum.</small>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="opinion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellendus beatae nobis.</p>
-                <small>Lorem, ipsum.</small>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-
-
-  </section>
-
-  <!-- footer -->
-  <footer>
-    <div class="container">
-      <div class="black">
         <div class="text">
-          <h3 class="light">Join our newsletter</h3>
-          <p class="light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, cupiditate!</p>
-        </div>
-        <div class="sub">
-          <input type="email" name="email" id="email">
-          <button class="btn--sub">Sign up</button>
+          <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+          <button class="btn">Try Us</button>
         </div>
       </div>
-      <div class="faq">
-        <!-- logo -->
-        <a href="index.html" class="logo"><i class="far fa-eye fa-2x icon"></i></a>
-        <div class="links">
-          <div>
-            <h5>Need help?</h5>
-            <ul class="list">
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Your Account</a></li>
-            </ul>
-          </div>
-          <div>
-            <h5>Follow us</h5>
-            <ul class="list">
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Twitter</a></li>
-            </ul>
-          </div>
-          <div>
-            <h5>Legal Stuff</h5>
-            <ul class="list">
-              <li><a href="#">Privacy & Terms</a></li>
-            </ul>
-          </div>
-          <div>
-            <h5>Contact</h5>
-            <ul class="list">
-              <li><a href="#">Email Us</a></li>
+    </section>
+
+    <!-- section -->
+    <section class="hero about">
+      <div class="container">
+        <img class="img" src="/img/img_1.jpg" alt="" />
+        <div class="h-text">
+          <h2>Lorem ipsum dolor sit.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+            dolor praesentium esse fugit autem vitae.
+          </p>
+          <button class="btn"><a href="about.html">About Us</a></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section -->
+    <section class="opinions-section">
+      <!-- slider opinions -->
+
+      <div class="container">
+        <div class="opinions">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="opinion">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae repellendus beatae nobis.
+                  </p>
+                  <small>Lorem, ipsum.</small>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="opinion">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae repellendus beatae nobis.
+                  </p>
+                  <small>Lorem, ipsum.</small>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="opinion">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae repellendus beatae nobis.
+                  </p>
+                  <small>Lorem, ipsum.</small>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="opinion">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae repellendus beatae nobis.
+                  </p>
+                  <small>Lorem, ipsum.</small>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </footer>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="black">
+          <div class="text">
+            <h3 class="light">Join our newsletter</h3>
+            <p class="light">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint,
+              cupiditate!
+            </p>
+          </div>
+          <div class="sub">
+            <input type="email" name="email" id="email" />
+            <button class="btn--sub">Sign up</button>
+          </div>
+        </div>
+        <div class="faq">
+          <!-- logo -->
+          <a href="index.html" class="logo"
+            ><i class="far fa-eye fa-2x icon"></i
+          ></a>
+          <div class="links">
+            <div>
+              <h5>Need help?</h5>
+              <ul class="list">
+                <li><a href="faq.com">FAQs</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5>Follow us</h5>
+              <ul class="list">
+                <li><a href="www.instagram.com">Instagram</a></li>
+                <li><a href="www.twitter.com">Twitter</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5>Legal Stuff</h5>
+              <ul class="list">
+                <li><a href="#">Privacy & Terms</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5>Contact</h5>
+              <ul class="list">
+                <li><a href="#">Email Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 
-  <script>
-    const config = {
-      type: 'carousel',
-      startAt: 0,
-      perView: 1,
-      autoplay: 3000 | true,
-      breakpoints: {
-        425: {
-          perView: 1
+    <script>
+      const config = {
+        type: "carousel",
+        startAt: 0,
+        perView: 1,
+        autoplay: 3000 | true,
+        breakpoints: {
+          425: {
+            perView: 1,
+          },
+          768: {
+            perView: 2,
+          },
+          1024: {
+            perView: 4,
+          },
+          1440: {
+            perView: 4,
+          },
         },
-        768: {
-          perView: 2
-        },
-        1440: {
-          perView: 4
-        }
-      }
-    }
-    const opconfig = {
-      startAt: 0,
-      perView: 1,
-      autoplay: 3000 | true,
-    }
-    new Glide('.glide', config).mount();
-    new Glide('.opinions', opconfig).mount();
-  </script>
-</body>
-
+      };
+      const opconfig = {
+        type: "carousel",
+        startAt: 0,
+        perView: 1,
+        autoplay: 3000 | true,
+      };
+      new Glide(".glide", config).mount();
+      new Glide(".opinions", opconfig).mount();
+    </script>
+  </body>
 </html>
