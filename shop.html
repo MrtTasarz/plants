@@ -276,14 +276,20 @@
     const a = {
       type: 'carousel',
       startAt: 0,
-      perView: 1,
+      perView: 4,
       autoplay: 2000 | true,
       breakpoints: {
         320: {
           perView: 1
         },
+        400:{
+          perView:1
+        },
         768: {
           perView: 2
+        },
+        1024:{
+          perView:4
         },
         1440: {
           perView: 4
