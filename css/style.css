@@ -87,6 +87,10 @@ a:visited {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 .container {
   padding: 2em 1em;
 }
@@ -97,7 +101,7 @@ a:visited {
 }
 
 .img {
-  width: 100%;
+  width: 50%;
   height: 40%;
   object-fit: cover;
   border-radius: 25px;
